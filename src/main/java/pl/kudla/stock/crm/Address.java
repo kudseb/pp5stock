@@ -15,5 +15,3 @@ public class Address {
     private String zip;
     private String country;
 }
-
-

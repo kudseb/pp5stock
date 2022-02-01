@@ -13,13 +13,12 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClientData implements ClientDataRepository {
+public class ClientData {
     @Id
     @GeneratedValue
     private Integer id;
-
-    private String firstname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
     @Embedded
     private Address address;
 }

@@ -1,7 +1,7 @@
 package pl.kudla.stock.crm;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ClientDataRepository extends CrudRepository<ClientData, String> {
-
+public interface ClientDataRepository extends
+        JpaRepository<ClientData, Integer> {
 }
